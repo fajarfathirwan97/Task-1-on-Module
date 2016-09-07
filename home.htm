@@ -9,6 +9,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-material-design.css" rel="stylesheet">
+	<link href="css/ripples.css" rel="stylesheet">
 	</head>
 	<body>
 	<!-- NAVBAR -->
@@ -28,17 +29,18 @@
           <a href="home.htm" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Menu
             <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="javascript:void(0)">Home</a></li>
-            <li><a href="javascript:void(0)">Profile</a></li>
-            <li><a href="javascript:void(0)">Contact</a></li>
+            <li><a href="home.htm">Home</a></li>
+            <li><a href="profile.htm">Profile</a></li>
+            <li><a href="contact.htm">Contact</a></li>
           </ul>
         </li>
       </ul>
     </div>
   </div>
 </div>
-<!-- NAVBAR -->
+<!-- end NAVBAR -->
 <!-- Content -->
+<!-- Content carousel -->
 <div class = "container">
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -77,16 +79,25 @@
   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
-</div> <!-- Carousel -->
+</div> 
+<!-- Content carousel end-->
+<!-- Content bio -->
 <div class="row">
   <div class="col-md-4">Nama saya adalah rizki umur saya 21 tahun lahir di bandung pada tanggal 5 april 1995 golongan darah 0 alamat di cimahi sdwedwed</div>
   <div class="col-md-4 col-md-offset-4">Line :RizkiAdrian</br>telp : 087824136347</br>alamat : bina muda 44 cimahi</br></div>
 </div>
+<!-- Content bio end -->
 </div>
+<!-- end Content  -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/material.js"></script>
 <script src="js/ripples.js"></script>
+<script type ="text/javascript">
+$(document).ready(function(){
+$.material.init();
+});
+</script>
 </body>
